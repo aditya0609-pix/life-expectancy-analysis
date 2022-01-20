@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+    <title>LIFE EXPECTANCY (WHO)</title>
+    <link rel = "icon" href = "logo1.png" type = "image/x-icon">
+    <style>
+        *, *::before, *::after {
+	 margin: 0;
+	 padding: 0;
+	 box-sizing: border-box;
+}
+ body {
+	 font: normal 10.6666666667px 'Titillium Web', sans-serif;
+	 /* color: #3c3f64; */
+	 overflow-x: hidden;
+}
+section{
+  background: linear-gradient(54deg, #9164ff, #8bfff4);
+  padding-bottom: 50px;
+  margin-top: -80px;
+}
+.w3-top a{
+    padding: 0 20px;
+    padding-top: 50px;
+    font-size: 20px;
+    text-decoration: none;
+   color: white;
+   font-family: 'STIX Two Math', serif;
+}
+.w3-top a:hover{
+    color: black;
+}
+.w3-top{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background: linear-gradient(to bottom, #eb3349  0%, #eb3349 100%);
+    /* position: fixed;
+    width: 100%; */
+}
+header h1{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 40px;
+    margin-top: -70px;
+}
+ .timeline ul li {
+	 list-style-type: none;
+	 position: relative;
+	 width: 6px;
+	 margin: 0 auto;
+	 padding-top: 50px;
+	 background: #fff;
+}
+ .timeline ul li::after {
+	 content: '';
+	 position: absolute;
+	 left: 50%;
+	 bottom: 0;
+	 transform: translateX(-50%) rotate(45deg);
+	 width: 20px;
+	 height: 20px;
+	 z-index: 2;
+	 background: #eee;
+}
+ .timeline ul li div {
+	 position: relative;
+	 bottom: 0;
+	 width: 400px;
+	 padding: 20px;
+	 background: #fff;
+	 box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
+	 border-radius: 5px;
+	 display: flex;
+	 align-items: center;
+}
+ .timeline ul li div time {
+	 position: absolute;
+	 background: #f5af19;
+	 width: 300px;
+	 height: 50px;
+	 top: -40px;
+	 border-radius: 5px;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 letter-spacing: 2px;
+   font-size: 20px;
+}
+ .timeline ul li div div {
+	 height: 100px;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+}
+ .timeline ul li div div p {
+	 text-align: center;
+}
+ .timeline ul li div .discovery {
+	 margin-right: 10px;
+}
+ .timeline ul li:nth-of-type(odd) > div {
+	 left: 45px;
+}
+ .timeline ul li:nth-of-type(even) > div {
+	 left: -439px;
+}
+ .timeline ul li div {
+	 visibility: hidden;
+	 opacity: 0;
+	 transition: all 0.5s ease-in-out;
+}
+ .timeline ul li:nth-of-type(odd) div {
+	 transform: translate3d(100px, -10px, 0) rotate(10deg);
+}
+ .timeline ul li:nth-of-type(even) div {
+	 transform: translate3d(-100px, -10px, 0) rotate(10deg);
+}
+ .timeline ul li.in-view div {
+	 transform: none;
+	 visibility: visible;
+	 opacity: 1;
+}
+ @media screen and (max-width: 900px) {
+	 .timeline ul li div {
+		 width: 250px;
+		 flex-direction: column;
+	}
+	 .timeline ul li div div {
+		 width: 80%;
+		 margin: 10px;
+	}
+	 .timeline ul li:nth-of-type(even) > div {
+		 left: -289px;
+	}
+}
+ /* @media screen and (max-width: 600px) {
+	 body {
+		 background: #8bfff4;
+	}
+	 .timeline ul li {
+		 margin-left: 20px;
+	}
+	 .timeline ul li div {
+		 width: calc(100vw - 91px);
+	}
+	 .timeline ul li:nth-of-type(even) > div {
+		 left: 45px;
+	}
+} */
+footer{
+  background-color: darkgray;
+  height: 300px;
+  margin-top: 100px;
+}
+footer img{
+  width: 130px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -100px;
+}
+footer h1{
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+  font-size: 40px;
+  margin-top: 0px;
+}
+footer p{
+  font-size: 25px;
+  margin-top: 40px;
+  text-align: center;
+  font-family: 'STIX Two Math', serif;
+}
+@media only screen and (max-width: 480px){
+  .w3-top a{
+      padding: 0 10px;
+    }
+    header p{
+      letter-spacing: 5px;
+    }
+    header{
+        height: 550px;
+    }
+    .timeline ul li {
+		 margin-right: 0px;
+     padding-right: 0px;
+     margin: 0px;
+	}
+  .timeline ul li:nth-of-type(even) > div {
+		 left: 55px;
+	}
+  .timeline ul li:nth-of-type(odd) > div {
+		 left: 50px;
+	}
+
+  .timeline ul li div  {
+		 width: 113px;
+		 flex-direction: column;
+     margin: 0px;
+     padding: 0px;
+     font-size: 10px;
+     text-align: center;
+	}
+  .timeline ul li div time{
+    font-size: 15px;
+    width: 220px;
+    text-align: center;
+  }
+  footer{
+    height: 400px;
+    margin-top: 80px;
+  }
+  section{
+    margin-top: -350px;
+  }
+}
+    </style>
+</head>
+<body>
+  <div class="w3-top" >
+    <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+      <a href="main.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+      <a href="dataset.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Dataset</a>
+      <a href="ourteam.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Our team</a>
+      <a href="analysis.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Analysis</a>
+    </div>
+  </div>
+  <header class="w3-container w3-red w3-center" style="padding:128px 16px ; ">
+    <h1 class="w3-margin w3-jumbo">OUR TEAM</h1>
+  </header>
+    <section class="timeline">
+        <ul>
+          <li>
+            <div>
+              <time>Aditya Subramanian</time>
+              <div class="discovery">
+                <h1>Analyst</h1>
+              </div>
+              <div class="scientist">
+                <h1>Team Coordinator</h1>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div>
+              <time style="font-size: 15px;">Medha Raghavendra Prasad</time>
+              <div class="discovery">
+                <h1>Analyst</h1>
+              </div>
+              <div class="scientist">
+                <h1>Web Developer</h1>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div>
+         <time>Mukhil</time> 
+              <div class="discovery">
+                <h1>Analyst</h1>
+              </div>
+              <div class="scientist">
+                <h1>AWS Hosting</h1>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>Ragul Sanjeevan</time>
+              <div class="discovery">
+                <h1>Analyst</h1>
+              </div>
+              <div class="scientist">
+                <h1>Web Developer</h1>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>Rishikesh Swaminathan</time>
+              <div class="discovery">
+                <h1>Analyst</h1>
+              </div>
+              <div class="scientist">
+                <h1>AWS Hosting</h1>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <img src="logo1.png" alt="">
+  <h1 class="w3-margin w3-jumbo">LIFE EXPECTANCY (WHO)</h1>
+ <p><strong>© Copyright Life Expectancy Data Analysis Team, 2021</strong></p>
+</footer>
+      <script>
+          var items = document.querySelectorAll(".timeline li");
+
+function isElementInViewport(el) {
+  var rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function callbackFunc() {
+  for (var i = 0; i < items.length; i++) {
+    if (isElementInViewport(items[i])) {
+      if(!items[i].classList.contains("in-view")){
+        items[i].classList.add("in-view");
+      }
+    } else if(items[i].classList.contains("in-view")) {
+        items[i].classList.remove("in-view");
+    }
+  }
+}
+ 
+window.addEventListener("load", callbackFunc);
+window.addEventListener("scroll", callbackFunc);
+
+      </script>
+</body>
+</html>

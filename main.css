@@ -1,0 +1,399 @@
+*{
+    margin: 0px;
+}
+.w3-top a{
+    padding: 0 20px;
+    padding-top: 50px;
+    font-size: 20px;
+    text-decoration: none;
+   color: white;
+   font-family: 'STIX Two Math', serif;
+}
+.w3-top a:hover{
+    color: black;
+}
+.w3-top{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background: linear-gradient(to bottom, #eb3349  0%, #eb3349 100%); 
+    /* position: fixed;
+    width: 100%; */
+}
+header{
+    background: linear-gradient(to bottom, #eb3349  0%, #f45c43 100%); 
+    height: 200px;
+}
+header img{
+    width: 130px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -70px;
+}
+header h1{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 40px;
+    margin-top: 40px;
+}
+header p {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+    letter-spacing: 15px;
+    font-family: 'STIX Two Math', serif;
+}
+.eduimg{
+  width: 100%;
+  margin-top: 400px;
+}
+.w3-twothird-first{
+    height: 400px;
+}
+.w3-twothird-first h1{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 30px;
+    font-family: 'Bree Serif', serif;
+}
+.w3-twothird-first h5{
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: 'STIX Two Math', serif;
+}
+.w3-twothird-first p{
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 30px;
+    font-family: 'STIX Two Math', serif;
+}
+.first img{
+    width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.second-grid{
+    background: linear-gradient(to bottom, #06beb6   0%, #48b1bf 100%);
+    margin-top: -13px;
+    height:700px ;
+}
+.second img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; 
+    padding-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.w3-twothird-second h1{
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    margin-top: 50px;
+}
+.w3-twothird-second p{
+    font-size: 21px;
+    font-family: 'STIX Two Math', serif;
+    text-align: center;
+    margin-top: 30px;
+    line-height: 30px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+.slider{
+    margin-top: 100px;
+}
+.outer-wrapper {
+    width: 80%;
+    margin: 50px auto;
+  }
+  
+  .s-wrap {
+    width: 100%;
+    margin-bottom: 50px;
+    padding-bottom: 55%;
+    position: relative;
+    border: 10px solid #fff;
+    background-color: #efefe8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  .s-wrap > input {
+    display: none;
+  }
+  .s-wrap .s-content {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 100%;
+    font-size: 0;
+    list-style: none;
+    transition: transform 1s;
+  }
+  .s-wrap .s-item {
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .s-wrap .s-item-1 {
+    background-image: url("https://quotefancy.com/media/wallpaper/3840x2160/33453-Marian-Wright-Edelman-Quote-Education-is-for-improving-the-lives.jpg");
+  }
+  .s-wrap .s-item-2 {
+    background-image: url("https://quotefancy.com/media/wallpaper/3840x2160/1745151-Bill-Gates-Quote-Investing-in-tomorrow-s-technology-today-is-more.jpg");
+  }
+  .s-wrap .s-item-3 {
+    background-image: url("https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/sites/2/2019/02/Big-Data-quotes-Daniel-Keys-Moran.jpg");
+  }
+  .s-wrap .s-item-4 {
+    background-image: url("https://i1.wp.com/www.quotesmuse.com/wp-content/uploads/2021/01/inspirational-quotes-about-working-together.png?fit=1200%2C628&ssl=1");
+  }
+  .s-wrap .s-item-5 {
+    background-image: url("https://quotefancy.com/media/wallpaper/3840x2160/2094172-Brad-Henry-Quote-A-good-teacher-can-inspire-hope-ignite-the.jpg");
+  }
+  .s-type-1 .s-control {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    transition-timing-function: ease-out;
+  }
+  .s-type-1 .s-control > label[class^=s-c-] {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid #999;
+    background-color: #efefe8;
+    cursor: pointer;
+  }
+  .s-type-1 .s-nav label {
+    display: none;
+    position: absolute;
+    top: 50%;
+    padding: 5px 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .s-type-1 .s-nav label::before, .s-type-1 .s-nav label::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 24px;
+    background-color: #fff;
+  }
+  .s-type-1 .s-nav label::before {
+    margin-bottom: -12px;
+  }
+  .s-type-1 .s-nav label.left {
+    left: 20px;
+  }
+  .s-type-1 .s-nav label.left::before {
+    transform: rotate(45deg);
+  }
+  .s-type-1 .s-nav label.left::after {
+    transform: rotate(-45deg);
+  }
+  .s-type-1 .s-nav label.right {
+    right: 20px;
+  }
+  .s-type-1 .s-nav label.right::before {
+    transform: rotate(-45deg);
+  }
+  .s-type-1 .s-nav label.right::after {
+    transform: rotate(45deg);
+  }
+  .s-type-1 #s-1:checked ~ .s-content {
+    transform: translateX(0%);
+  }
+  .s-type-1 #s-1:checked ~ .s-control .s-c-1 {
+    background-color: #333;
+  }
+  .s-type-1 #s-1:checked ~ .s-nav .s-nav-1 {
+    display: block;
+  }
+  .s-type-1 #s-2:checked ~ .s-content {
+    transform: translateX(-20%);
+  }
+  .s-type-1 #s-2:checked ~ .s-control .s-c-2 {
+    background-color: #333;
+  }
+  .s-type-1 #s-2:checked ~ .s-nav .s-nav-2 {
+    display: block;
+  }
+  .s-type-1 #s-3:checked ~ .s-content {
+    transform: translateX(-40%);
+  }
+  .s-type-1 #s-3:checked ~ .s-control .s-c-3 {
+    background-color: #333;
+  }
+  .s-type-1 #s-3:checked ~ .s-nav .s-nav-3 {
+    display: block;
+  }
+  .s-type-1 #s-4:checked ~ .s-content {
+    transform: translateX(-60%);
+  }
+  .s-type-1 #s-4:checked ~ .s-control .s-c-4 {
+    background-color: #333;
+  }
+  .s-type-1 #s-4:checked ~ .s-nav .s-nav-4 {
+    display: block;
+  }
+  .s-type-1 #s-5:checked ~ .s-content {
+    transform: translateX(-80%);
+  }
+  .s-type-1 #s-5:checked ~ .s-control .s-c-5 {
+    background-color: #333;
+  }
+  .s-type-1 #s-5:checked ~ .s-nav .s-nav-5 {
+    display: block;
+  }
+  
+  @keyframes slider-animation {
+    0%, 7% {
+      transform: translateX(0%);
+    }
+    12.5%, 19.5% {
+      transform: translateX(-20%);
+    }
+    25%, 32% {
+      transform: translateX(-40%);
+    }
+    37.5%, 44.5% {
+      transform: translateX(-60%);
+    }
+    50%, 57% {
+      transform: translateX(-80%);
+    }
+    62.5%, 69.5% {
+      transform: translateX(-60%);
+    }
+    75%, 82% {
+      transform: translateX(-40%);
+    }
+    87.5%, 94.5% {
+      transform: translateX(-20%);
+    }
+  }
+  .third-grid{
+    background: linear-gradient(to bottom, #56ab2f    0%, #a8e063 100%);
+    margin-top: 100px;
+    height:700px ;
+}
+.third img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; 
+    padding-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.w3-twothird-third h1{
+  font-family: 'Bree Serif', serif;
+  text-align: center;
+  margin-top: 50px;
+}
+.w3-twothird-third p{
+  font-size: 21px;
+  font-family: 'STIX Two Math', serif;
+  text-align: center;
+  margin-top: 30px;
+  line-height: 30px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+footer{
+  background-color: darkgray;
+  height: 300px;
+}
+footer img{
+  width: 130px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30px;
+}
+footer h1{
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+  font-size: 40px;
+  margin-top: 0px;
+}
+footer p{
+  font-size: 25px;
+  margin-top: 40px;
+  text-align: center;
+  font-family: 'STIX Two Math', serif;
+}
+  @media only screen and (max-width:480px)  {
+    .slider {
+     margin-top: 100px;
+    }
+    .w3-top a{
+      padding: 0 10px;
+    }
+    header p{
+      letter-spacing: 5px;
+    }
+    .eduimg{
+      margin-top: 550px;
+    }
+    .first img{
+      width: 300px;
+    }
+    .second-grid{
+        width: 100%;
+        height: 800px;
+    }
+    .third-grid{
+      height: 730px;
+    }
+    .w3-twothird-first h5 ,.w3-twothird-first p{
+      text-align: start;
+      padding-right: 0px;
+      padding-left: 30px;
+    }
+    .w3-top{
+      width: 100%;
+    } 
+    header{
+      width: 91.7%;
+    }
+    .w3-twothird-second p{
+      text-align: start;
+      margin: 0px;
+      margin-top: 20px;
+      margin-left: 30px;
+      margin-right: 20px;
+    }
+    .third-grid{
+      width: 100%;
+      height: 890px;
+    }
+    .w3-twothird-third p{
+      text-align: start;
+      margin: 0px;
+      margin-top: 30px;
+      margin-left: 30px;
+      margin-right: 20px;
+    }
+    footer{
+      height: 400px;
+    }
+  }
